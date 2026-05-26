@@ -6,6 +6,8 @@ Cross-platform SFTP / SCP / FTP client inspired by WinSCP with modern UI, built 
 
 ## ✨ Features
 
+## Features
+
 - 🌐 SFTP, SCP, and FTP support
 - 🖥️ Works on Windows, Linux, and macOS
 - ⚡ Fast file browsing and transfer
@@ -14,9 +16,16 @@ Cross-platform SFTP / SCP / FTP client inspired by WinSCP with modern UI, built 
 - 🔑 SSH key authentication support
 - 🔐 PPK to OpenSSH key conversion
 - 🧩 Built-in terminal using xterm.js
-- 🎨 File icons and modern UI
+- 🎨 Modern UI with file icons
 - 👁️ Real-time file watching with auto sync
 - 📦 Electron-based desktop app
+- 🔍 Remote file search
+- ✏️ Built-in code editor
+- 🌙 Dark mode themes
+- 🗂️ Tabs support
+- 🖱️ Drag & drop uploads
+- 📂 Session manager improvements
+- 📥 Transfer queue manager
 
 ---
 
@@ -79,21 +88,6 @@ sudo pacman -R orbitscp
 rm -rf ~/.config/orbitscp
 rm -rf ~/.local/share/orbitscp
 ```
-
----
-
-## 🛣️ Roadmap
-
-Planned features:
-
-- Tabs support
-- Drag & drop uploads
-- Cloud storage integration
-- Session manager improvements
-- Dark mode themes
-- Remote file search
-- Transfer queue manager
-- Built-in code editor
 
 ---
 
