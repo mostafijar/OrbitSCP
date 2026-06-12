@@ -1,81 +1,119 @@
+<div align="center">
+
+<img src="icon.png" width="120" alt="OrbitSCP Logo" />
+
 # OrbitSCP
 
-A fast, cross-platform file transfer client with a modern dual-pane UI.
-Supports SFTP, SCP, FTP, FTPS, WebDAV, and S3.
-Built with [Tauri](https://tauri.app) (Rust + WebView).
+**A fast, modern file transfer client for SFTP · SCP · FTP · FTPS · WebDAV · S3**
 
-![OrbitSCP Banner](build/icon-1.0.2.png)
+[![Version](https://img.shields.io/badge/version-1.0.4-blue?style=flat-square)](../../releases)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey?style=flat-square)](#installation)
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
+[![Built with Tauri](https://img.shields.io/badge/built%20with-Tauri-24C8D8?style=flat-square&logo=tauri)](https://tauri.app)
+[![Rust](https://img.shields.io/badge/backend-Rust-orange?style=flat-square&logo=rust)](https://www.rust-lang.org)
 
----
+<img width="100%" alt="OrbitSCP Screenshot" src="screenshot.png" />
 
-## Features
-
-- **Protocols** — SFTP, SCP, FTP, FTPS, WebDAV, Amazon S3
-- **Dual-pane file manager** — local and remote side by side
-- **Fast directory browsing** — single-round-trip SSH exec listing; virtual scroll for directories with 1000+ items
-- **File transfers** — upload, download, drag & drop, transfer queue manager
-- **Bandwidth throttle** — limit transfer speed per connection
-- **SSH key authentication** — OpenSSH keys + automatic PPK → PEM conversion
-- **Auto-reconnect** — detects dropped connections and reconnects silently
-- **Sync** — two-way sync between local and remote directories
-- **Built-in terminal** — full xterm.js terminal via SSH
-- **Built-in code editor** — edit remote files directly (VS Code, or built-in)
-- **Auto-upload on save** — watch local files and push changes automatically
-- **Remote file search** — search by name across remote directories
-- **Permissions editor** — view and change remote file permissions (chmod)
-- **Keygen** — generate SSH key pairs in-app
-- **Session manager** — save, organise, and quickly connect to saved sessions
-- **Tabs** — multiple connections open at the same time
-- **Live speed badge** — real-time RX/TX speed for all protocols
-- **Dark mode themes** — multiple built-in themes
-- **Debug log** — optional session log (off by default, toggle in settings)
+</div>
 
 ---
 
-## Screenshots
+## ✨ Features
 
-<img width="100%" alt="OrbitSCP Screenshot" src="./screenshot.png">
+<table>
+<tr>
+<td width="50%">
+
+**🌐 Protocols**
+- SFTP, SCP, FTP, FTPS
+- WebDAV, Amazon S3
+
+**📁 File Management**
+- Dual-pane file manager
+- Drag & drop uploads
+- Transfer queue manager
+- Remote file search
+- Permissions editor (chmod)
+
+**⚡ Performance**
+- Single-round-trip SSH exec listing
+- Virtual scroll for 1000+ item directories
+- Connection pool with auto-reuse
+- SSH keepalive — no idle disconnects
+
+</td>
+<td width="50%">
+
+**🔐 Security & Auth**
+- SSH key authentication
+- PPK → OpenSSH auto-conversion
+- SOCKS5 proxy support
+- Host key verification (TOFU)
+
+**🛠️ Productivity**
+- Built-in xterm.js terminal
+- Built-in code editor
+- Auto-upload on save (file watcher)
+- Two-way sync
+- SSH keygen in-app
+- Bandwidth throttle per connection
+
+**🎨 Interface**
+- Multiple dark mode themes
+- Tab support — multiple connections
+- Live RX/TX speed badge
+- Session manager
+- Optional debug log
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Installation
+## 📥 Installation
 
 ### Windows
 
-Download the latest `.exe` installer from the [Releases](../../releases) page.
+Download the latest **`.exe` installer** from the [**Releases**](../../releases) page.
 
 ### Linux
 
-| Package | Distribution |
-|---|---|
-| `.deb` | Ubuntu, Linux Mint, Debian |
-| `.rpm` | Fedora, CentOS, RHEL |
-| `.pacman` | Arch Linux, Manjaro |
+| Format | Distributions |
+|--------|--------------|
+| `.deb` | Ubuntu · Linux Mint · Debian |
+| `.rpm` | Fedora · CentOS · RHEL · openSUSE |
+| `.pacman` | Arch Linux · Manjaro |
 | `.snap` | Any snap-enabled distro |
-| `.AppImage` | Universal (no install needed) |
+| `.AppImage` | Universal — no install needed |
+
+> Download from the [**Releases**](../../releases) page and install with your package manager.
 
 ### macOS
 
-Coming soon.
+🚧 Coming soon
 
 ---
 
-## Uninstall
+## 🗑️ Uninstall
+
+<details>
+<summary>Click to expand uninstall instructions</summary>
 
 ```bash
-# DEB (Ubuntu / Debian / Mint)
+# DEB — Ubuntu / Debian / Mint
 sudo apt remove orbitscp
 
-# RPM (Fedora / RHEL / CentOS)
+# RPM — Fedora / RHEL / CentOS
 sudo dnf remove orbitscp
 
-# RPM (openSUSE)
+# RPM — openSUSE
 sudo zypper remove orbitscp
 
 # Snap
 sudo snap remove orbitscp
 
-# Pacman (Arch / Manjaro)
+# Pacman — Arch / Manjaro
 sudo pacman -R orbitscp
 
 # Remove saved sessions and settings (optional)
@@ -84,26 +122,50 @@ rm -rf ~/.local/share/orbitscp
 rm -rf ~/.orbitscp
 ```
 
----
-
-## Contributing
-
-Pull requests are welcome. For bugs or feature requests, open an issue.
+</details>
 
 ---
 
-## License
+## 🏗️ Tech Stack
 
-MIT License
-
----
-
-## Author
-
-**Mostafijar Rahman**
-- GitHub: https://github.com/mostafijar
-- Email: mostafijar7@gmail.com
+| Layer | Technology |
+|-------|-----------|
+| UI | HTML · CSS · JavaScript |
+| Backend | Rust |
+| Desktop runtime | [Tauri](https://tauri.app) |
+| Terminal | Built-in terminal emulator |
 
 ---
 
-If you find OrbitSCP useful, give it a star on GitHub.
+## 🤝 Contributing
+
+Pull requests are welcome.
+For bugs or feature ideas, please [open an issue](../../issues).
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👨‍💻 Author
+
+<table>
+<tr>
+<td align="center">
+<b>Mostafijar Rahman</b><br/>
+<a href="https://github.com/mostafijar">GitHub</a> ·
+<a href="mailto:mostafijar@mail.com">Email</a>
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+If OrbitSCP is useful to you, consider giving it a ⭐ on GitHub — it helps a lot!
+
+</div>
