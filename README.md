@@ -12,7 +12,7 @@
 [![Built with Tauri](https://img.shields.io/badge/built%20with-Tauri-24C8D8?style=flat-square&logo=tauri)](https://tauri.app)
 [![Rust](https://img.shields.io/badge/backend-Rust-orange?style=flat-square&logo=rust)](https://www.rust-lang.org)
 
-<img width="100%" alt="OrbitSCP Screenshot" src="screenshot.png" />
+<img width="100%" alt="OrbitSCP Screenshot" src="screenshots.png" />
 
 </div>
 
