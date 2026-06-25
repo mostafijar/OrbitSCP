@@ -4,7 +4,7 @@
 
 # OrbitSCP
 
-**A fast, modern file transfer client for SFTP · SCP · FTP · FTPS · WebDAV · S3**
+Fast, modern desktop file transfer client for SFTP, SCP, FTP, FTPS, WebDAV, and S3.
 
 [![Version](https://img.shields.io/badge/version-1.0.4-blue?style=flat-square)](../../releases)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey?style=flat-square)](#installation)
@@ -18,154 +18,167 @@
 
 ---
 
-## ✨ Features
+## Why OrbitSCP
 
-<table>
-<tr>
-<td width="50%">
-
-**🌐 Protocols**
-- SFTP, SCP, FTP, FTPS
-- WebDAV, Amazon S3
-
-**📁 File Management**
-- Dual-pane file manager
-- Drag & drop uploads
-- Transfer queue manager
-- Remote file search
-- Permissions editor (chmod)
-
-**⚡ Performance**
-- Single-round-trip SSH exec listing
-- Virtual scroll for 1000+ item directories
-- Connection pool with auto-reuse
-- SSH keepalive — no idle disconnects
-
-</td>
-<td width="50%">
-
-**🔐 Security & Auth**
-- SSH key authentication
-- PPK → OpenSSH auto-conversion
-- SOCKS5 proxy support
-- Host key verification (TOFU)
-
-**🛠️ Productivity**
-- Built-in xterm.js terminal
-- Built-in code editor
-- Auto-upload on save (file watcher)
-- Two-way sync
-- SSH keygen in-app
-- Bandwidth throttle per connection
-
-**🎨 Interface**
-- Multiple dark mode themes
-- Tab support — multiple connections
-- Live RX/TX speed badge
-- Session manager
-- Optional debug log
-
-</td>
-</tr>
-</table>
+- Dual-pane workflow focused on speed.
+- Smooth handling of large directories and large file diffs.
+- Strong SSH and transfer tooling without heavy setup.
 
 ---
 
-## 📥 Installation
+## Features
+
+### Protocols
+
+- SFTP, SCP, FTP, FTPS
+- WebDAV / WebDAVS
+- Amazon S3 (B2-compatible setups supported)
+
+### File Operations
+
+- Dual-pane file manager
+- Split Commander mode (Server A <-> Server B copy)
+- Drag and drop upload/download
+- Transfer queue manager
+- Remote file search
+- Permissions editor (chmod/chown)
+- Remote path bookmarks
+- Last path memory for local pane and both remote panes
+
+### Sync and Compare
+
+- Two-way sync (upload, download, mirror)
+- Include-directory filtering for sync scope
+- Sync compares real content differences
+- Whitespace-aware compare always enabled in sync
+- Per-file Diff directly from sync result list
+- Large-file quick diff preview with highlighted changes
+- Diff window opens above sync modal for clear workflow
+
+### Productivity
+
+- Built-in terminal
+- Built-in editor
+- External editor integration
+- Auto-upload on save watcher
+- SSH key generation in-app
+- Multi-connection tabs
+- Session manager (save/import/export)
+
+### Security and Reliability
+
+- Password and SSH key authentication
+- PPK to OpenSSH conversion support
+- Host key verification (TOFU)
+- SOCKS5 proxy support
+- Keepalive and auto-reconnect behavior
+- Optional transfer integrity verification
+- Per-connection bandwidth throttle
+
+---
+
+## Installation
 
 ### Windows
 
-Download the latest **`.exe` installer** from the [**Releases**](../../releases) page.
+Download the latest `.exe` installer from the [Releases](../../releases) page.
 
 ### Linux
 
-| Format | Distributions |
-|--------|--------------|
-| `.deb` | Ubuntu · Linux Mint · Debian |
-| `.rpm` | Fedora · CentOS · RHEL · openSUSE |
-| `.pacman` | Arch Linux · Manjaro |
+| Format | Distros |
+|--------|---------|
+| `.deb` | Ubuntu, Linux Mint, Debian |
+| `.rpm` | Fedora, CentOS, RHEL, openSUSE |
+| `.pacman` | Arch Linux, Manjaro |
 | `.snap` | Any snap-enabled distro |
-| `.AppImage` | Universal — no install needed |
+| `.AppImage` | Universal, no install needed |
 
-> Download from the [**Releases**](../../releases) page and install with your package manager.
+Download from the [Releases](../../releases) page and install with your package manager.
 
 ### macOS
 
-🚧 Coming soon
+Coming soon.
 
 ---
 
-## 🗑️ Uninstall
-
-<details>
-<summary>Click to expand uninstall instructions</summary>
+## Development
 
 ```bash
-# DEB — Ubuntu / Debian / Mint
+npm install
+npm run tauri dev
+```
+
+Build release:
+
+```bash
+npm run tauri build
+```
+
+---
+
+## Uninstall
+
+```bash
+# DEB (Ubuntu / Debian / Mint)
 sudo apt remove orbitscp
 
-# RPM — Fedora / RHEL / CentOS
+# RPM (Fedora / RHEL / CentOS)
 sudo dnf remove orbitscp
 
-# RPM — openSUSE
+# RPM (openSUSE)
 sudo zypper remove orbitscp
 
 # Snap
 sudo snap remove orbitscp
 
-# Pacman — Arch / Manjaro
+# Pacman (Arch / Manjaro)
 sudo pacman -R orbitscp
 
-# Remove saved sessions and settings (optional)
+# Optional: remove app data
 rm -rf ~/.config/orbitscp
 rm -rf ~/.local/share/orbitscp
 rm -rf ~/.orbitscp
 ```
 
-</details>
-
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
-|-------|-----------|
-| UI | HTML · CSS · JavaScript |
+|-------|------------|
+| UI | HTML, CSS, JavaScript |
 | Backend | Rust |
-| Desktop runtime | [Tauri](https://tauri.app) |
-| Terminal | Built-in terminal emulator |
+| Runtime | Tauri |
+| Terminal | xterm.js |
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Pull requests are welcome.
-For bugs or feature ideas, please [open an issue](../../issues).
+For bugs and feature ideas, open an issue at [Issues](../../issues).
 
 ---
 
-## 📄 License
+## License
 
-This project is licensed under the **MIT License**.
+MIT License.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-<table>
-<tr>
-<td align="center">
-<b>Mostafijar Rahman</b><br/>
-<a href="https://github.com/mostafijar">GitHub</a> ·
-<a href="mailto:mostafijar@mail.com">Email</a>
-</td>
-</tr>
-</table>
+<div align="center">
+
+**Mostafijar Rahman**  
+[GitHub](https://github.com/mostafijar) · [Email](mailto:mostafijar@mail.com)
+
+</div>
 
 ---
 
 <div align="center">
 
-If OrbitSCP is useful to you, consider giving it a ⭐ on GitHub — it helps a lot!
+If OrbitSCP helps you, a star on GitHub is appreciated.
 
 </div>
