@@ -6,9 +6,8 @@
 
 Fast, modern desktop file transfer client for SFTP, SCP, FTP, FTPS, WebDAV, and S3.
 
-[![Version](https://img.shields.io/badge/version-1.0.4-blue?style=flat-square)](../../releases)
+[![Version](https://img.shields.io/badge/version-1.0.7-blue?style=flat-square)](../../releases)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey?style=flat-square)](#installation)
-[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 [![Built with Tauri](https://img.shields.io/badge/built%20with-Tauri-24C8D8?style=flat-square&logo=tauri)](https://tauri.app)
 [![Rust](https://img.shields.io/badge/backend-Rust-orange?style=flat-square&logo=rust)](https://www.rust-lang.org)
 
