@@ -101,21 +101,6 @@ Coming soon.
 
 ---
 
-## Development
-
-```bash
-npm install
-npm run tauri dev
-```
-
-Build release:
-
-```bash
-npm run tauri build
-```
-
----
-
 ## Uninstall
 
 ```bash
@@ -142,27 +127,11 @@ rm -rf ~/.orbitscp
 
 ---
 
-## Tech Stack
-
-| Layer | Technology |
-|-------|------------|
-| UI | HTML, CSS, JavaScript |
-| Backend | Rust |
-| Runtime | Tauri |
-| Terminal | xterm.js |
-
----
 
 ## Contributing
 
 Pull requests are welcome.
 For bugs and feature ideas, open an issue at [Issues](../../issues).
-
----
-
-## License
-
-MIT License.
 
 ---
 
