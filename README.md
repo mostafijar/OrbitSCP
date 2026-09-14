@@ -4,7 +4,9 @@
 
 # OrbitSCP
 
-Fast, modern desktop file transfer client for SFTP, SCP, FTP, FTPS, WebDAV, and S3.
+Dual-pane workflow focused on speed.
+Smooth handling of large directories and large file diffs.
+Strong SSH and transfer tooling without heavy setup.
 
 [![Version](https://img.shields.io/badge/version-1.0.7-blue?style=flat-square)](../../releases)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey?style=flat-square)](#installation)
@@ -28,13 +30,11 @@ Fast, modern desktop file transfer client for SFTP, SCP, FTP, FTPS, WebDAV, and 
 ## Features
 
 ### Protocols
-
 - SFTP, SCP, FTP, FTPS
 - WebDAV / WebDAVS
 - Amazon S3 (B2-compatible setups supported)
 
 ### File Operations
-
 - Dual-pane file manager
 - Split Commander mode (Server A <-> Server B copy)
 - Drag and drop upload/download
@@ -45,27 +45,26 @@ Fast, modern desktop file transfer client for SFTP, SCP, FTP, FTPS, WebDAV, and 
 - Last path memory for local pane and both remote panes
 
 ### Sync and Compare
-
 - Two-way sync (upload, download, mirror)
 - Include-directory filtering for sync scope
 - Sync compares real content differences
-- Whitespace-aware compare always enabled in sync
+- 4 compare modes: Smart (Recommended), Fast (size+time), Strict Content (SHA256), Timestamp
+- Whitespace-aware compare (toggle) for text files
 - Per-file Diff directly from sync result list
 - Large-file quick diff preview with highlighted changes
 - Diff window opens above sync modal for clear workflow
-
+  
 ### Productivity
-
-- Built-in terminal
+- Built-in terminal (multi-tab, SSH exec, interactive installer help, resizable, command history)
 - Built-in editor
 - External editor integration
 - Auto-upload on save watcher
 - SSH key generation in-app
 - Multi-connection tabs
 - Session manager (save/import/export)
+- Report Issue (top bar & Settings) — guest, no login, rate-limited
 
 ### Security and Reliability
-
 - Password and SSH key authentication
 - PPK to OpenSSH conversion support
 - Host key verification (TOFU)
@@ -73,6 +72,7 @@ Fast, modern desktop file transfer client for SFTP, SCP, FTP, FTPS, WebDAV, and 
 - Keepalive and auto-reconnect behavior
 - Optional transfer integrity verification
 - Per-connection bandwidth throttle
+- Resumable uploads for all protocols (SFTP/SCP/FTP/FTPS/S3/WebDAV) with `..orb~up` part files
 
 ---
 
@@ -127,10 +127,8 @@ rm -rf ~/.orbitscp
 ---
 
 
-## Contributing
-
-Pull requests are welcome.
-For bugs and feature ideas, open an issue at [Issues](../../issues).
+# Contributing
+Pull requests are welcome. For bugs and feature ideas, use **Report** in the app or open an issue at Issues.
 
 ---
 
