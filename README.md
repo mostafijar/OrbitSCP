@@ -9,6 +9,8 @@
   <img src="build/icons/128x128.png" width="128" alt="OrbitSCP icon">
 </p>
 
+![OrbitSCP Screenshot](screenshot.png)
+
 Dual-pane workflow focused on speed.
 Smooth handling of large directories and large file diffs.
 Strong SSH and transfer tooling without heavy setup.
@@ -63,7 +65,7 @@ Strong SSH and transfer tooling without heavy setup.
 ## Installation
 
 ### Windows
-Download the latest .exe installer from the Releases page.
+Download the latest .exe installer from the [Releases page](https://github.com/mostafijar/OrbitSCP/releases).
 
 ### Linux
 
@@ -73,10 +75,10 @@ Download the latest .exe installer from the Releases page.
 | .rpm | Fedora, CentOS, RHEL, openSUSE |
 | .AppImage | Universal, no install needed |
 
-Download from the Releases page and install with your package manager.
+Download from the [Releases page](https://github.com/mostafijar/OrbitSCP/releases) and install with your package manager.
 
 ### macOS
-Coming soon.
+Download the latest .dmg installer from the [Releases page](https://github.com/mostafijar/OrbitSCP/releases).
 
 ## Uninstall
 
