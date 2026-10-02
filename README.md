@@ -9,6 +9,8 @@
   <img src="build/icons/128x128.png" width="128" alt="OrbitSCP icon">
 </p>
 
+<img width="100%" alt="OrbitSCP Screenshot" src="screenshot.png" />
+
 Dual-pane workflow focused on speed.
 Smooth handling of large directories and large file diffs.
 Strong SSH and transfer tooling without heavy setup.
